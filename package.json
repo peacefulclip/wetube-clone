@@ -1,0 +1,32 @@
+{
+  "name": "wetube",
+  "version": "1.0.0",
+  "description": "Video Archive of My Memories",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peacefulclip/wetube-clone.git"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "author": "Peacefulclip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peacefulclip/wetube-clone/issues"
+  },
+  "homepage": "https://github.com/peacefulclip/wetube-clone#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/node": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@prettier/plugin-pug": "^3.0.0",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.2"
+  }
+}

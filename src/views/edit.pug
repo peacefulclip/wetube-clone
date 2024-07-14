@@ -6,6 +6,8 @@ block content
     //- POST: send or change file, change database, logging in, etc
     //- how to send this to backend
     //- action will be 'where we send the data'
+    //- method is how we transfer data between form and backend; therefore, the search term will be included in URL if method is get 
+    //- whether to use GET or POST depends on the answer of the question "is the data modify the state of the database" -> if yes, use POST
     form(method="POST")
         input(name="title" placeholder="Video Title" type="text" value=video.title required)
         input(type="submit" value="save")

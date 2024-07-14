@@ -1,5 +1,7 @@
 extends base.pug
 
 block content
-    h3 #{video.views} views
-    h4 #{video.views} rating
+    //- ternary operator: show 'view' if view count is 1 and views when count is more than 1
+    h3 #{video.views} #{video.views === 1 ? "view" : "views"}
+    //- absolute & relative URL: /edit -> replaces to root/edit, edit => relative URL that changes the end and send you from videos/1 to videos/edit
+    a(href=`${video.id}/edit`) Edit Video &rarr;

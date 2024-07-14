@@ -9,7 +9,8 @@ const PORT = 4000;
 const app = express();
 const logger = morgan("dev");
 app.use(logger); // morgan middleware
-app.use(express.urlencoded({extended: true})); // express.urlencoded() middleaware
+app.use(express.urlencoded({extended: true})); // express.urlencoded() middleaware -- order matters
+// req.body exists from here so the videoRouter configured later can use req.body
 
 app.set("view engine", "pug");
 app.set("views", process.cwd() + "/src/views");

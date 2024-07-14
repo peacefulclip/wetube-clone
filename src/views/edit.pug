@@ -1,4 +1,11 @@
 extends base.pug
 
 block content
-    h1 Edit Video
+    h4 Change Title of Video 
+    //- GET: searching for something, video, etc
+    //- POST: send or change file, change database, logging in, etc
+    //- how to send this to backend
+    //- action will be 'where we send the data'
+    form(method="POST")
+        input(name="title" placeholder="Video Title" type="text" value=video.title required)
+        input(type="submit" value="save")

@@ -2,6 +2,7 @@ extends base.pug
 
 block content 
     h3 hello from upload
-    form(method="POST")
-        input(placeholder="New Video Title" type="text" required)
+    //- action URL default
+    form(method="POST" action="/videos/upload")
+        input(placeholder="New Video Title" type="text" name="title" required)
         input(type="submit" value="Upload Video")
